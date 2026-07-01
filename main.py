@@ -78,7 +78,6 @@ def delete_book_by_id(books):
     new_books = [book for book in books if book["id"] != book_id]
     return new_books, len(new_books) != len(books)
 
-# ✅ исправлено: поиск + found + возврат
 def change_book_by_name(books):
     name = input("Введите название: ").lower()
     found = False
@@ -93,7 +92,6 @@ def change_book_by_name(books):
 
     return found
 
-# ✅ исправлено: found + возврат
 def change_book_by_id(books):
     book_id = input_int("Введите id: ")
     found = False
